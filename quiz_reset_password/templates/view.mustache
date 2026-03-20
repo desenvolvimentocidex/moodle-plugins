@@ -7,22 +7,16 @@
             <table style="width: 100%; margin-bottom: 20px; border: 1px solid #cccccc;">
                 <thead>
                     <tr style="background: #ebebeb;">
-                        <th style="padding: 5px; border: 1px solid #cccccc;">ID</th>
-                        <th style="padding: 5px; border: 1px solid #cccccc;">CURSO</th>
-                        <th style="padding: 5px; border: 1px solid #cccccc;">CÓDIGO</th>
-                        <th style="padding: 5px; border: 1px solid #cccccc;">CATEGORIA</th>
-                        <th style="padding: 5px; border: 1px solid #cccccc;">SENHA ATUAL</th>
+                        <th style="font-size: .72rem; padding: 5px; border: 1px solid #cccccc;">PROVA</th>
+                        <th style="font-size: .72rem; padding: 5px; border: 1px solid #cccccc;">SENHA ATUAL</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     {{#quiz}}
                         <tr>
-                            <td style="padding: 5px; font-size: .875em; font-weight: 400; border: 1px solid #cccccc;">{{id}}</td>
-                            <td style="padding: 5px; font-size: .875em; font-weight: 400; border: 1px solid #cccccc;">{{fullname}}</td>
-                            <td style="padding: 5px; font-size: .875em; font-weight: 400; border: 1px solid #cccccc;">{{shortname}}</td>
-                            <td style="padding: 5px; font-size: .875em; font-weight: 400; border: 1px solid #cccccc;">{{course_category}}</td>
-                            <td style="padding: 5px; font-size: .875em; font-weight: 400; border: 1px solid #cccccc;">
+                            <td style="padding: 5px; font-size: .72rem; font-weight: 400; border: 1px solid #cccccc;">{{fullname}}</td>
+                            <td style="padding: 5px; font-size: .72rem; font-weight: 400; border: 1px solid #cccccc;">
                                 <input type="text" name="password" value="{{password}}" disabled="disabled" style="width: 100%;" />
                             </td>
                         </tr>
@@ -31,10 +25,10 @@
 
                 <tfoot>
                     <tr style="background: #ebebeb;">
-                        <td style="padding: 10px 5px; border: 1px solid #cccccc;" colspan="5">
+                        <td style="padding: 10px 5px; border: 1px solid #cccccc;" colspan="2">
                             <label for="grade">Nova Senha:</label>
                             <br>
-                            <input type="text" name="new_password" style="width: 180px;" required />
+                            <input type="text" name="new_password" style="width: 100%;" required />
                         </td>
                     </tr>
                 </tfoot>
