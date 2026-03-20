@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="block-content">
+        <form action="{{formaction}}" method="post">
+            <input type="hidden" name="userid" value="{{userid}}" />
+            <input type="hidden" name="courseid" value="{{courseid}}" />
+
+            <label for="grade">Nota:</label>
+            <div class="rating-input">
+                <label><input type="radio" name="grade" value="1">1</label>
+                <label><input type="radio" name="grade" value="2">2</label>
+                <label><input type="radio" name="grade" value="3">3</label>
+                <label><input type="radio" name="grade" value="4">4</label>
+                <label><input type="radio" name="grade" value="5">5</label>
+            </div>
+
+            <label for="description">Comentário:</label>
+            <textarea name="description"></textarea>
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </div>
+</div>

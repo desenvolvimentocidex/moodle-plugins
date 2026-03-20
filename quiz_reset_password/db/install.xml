@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<XMLDB PATH="blocks/quiz_reset_password/db" VERSION="20220101" COMMENT="Instalação do banco de dados para o seu plugin">
+    <TABLES>
+        <TABLE NAME="quiz_reset_password" COMMENT="Tabela para armazenar dados do seu plugin">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" AUTO="true" SEQUENCE="true" COMMENT="Chave primária" />
+                <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" COMMENT="ID do usuário" />
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id" />
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>
