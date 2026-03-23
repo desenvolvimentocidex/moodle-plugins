@@ -54,5 +54,17 @@ $capabilities = array(
             'editingteacher' => CAP_PREVENT,
             'manager' => CAP_ALLOW
         )
-    )
+    ),
+    'block/accessreview:view' => array(
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_BLOCK,
+        'archetypes' => array(
+            'user' => CAP_PREVENT,
+            'guest' => CAP_PREVENT,
+            'student' => CAP_PREVENT,
+            'teacher' => CAP_PREVENT,
+            'editingteacher' => CAP_PREVENT,
+            'manager' => CAP_ALLOW
+        ),
+    ),
 );
