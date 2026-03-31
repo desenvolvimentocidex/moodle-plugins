@@ -1,0 +1,29 @@
+<div class="flex-container">
+    <div class="flex-block-content">
+        <table style="width: 100%; margin-bottom: 20px; border: 1px solid #cccccc;">
+            <thead>
+                <tr style="background: #ebebeb;">
+                    <th style="font-size: .72rem; padding: 5px; border: 1px solid #cccccc;">NOME CURTO</th>
+                    <th style="font-size: .72rem; padding: 5px; border: 1px solid #cccccc;">DATA</th>
+                    <th style="font-size: .72rem; padding: 5px; border: 1px solid #cccccc;">USUÁRIO</th>
+                    <th style="font-size: .72rem; padding: 5px; border: 1px solid #cccccc;">NOME</th>
+                    <th style="font-size: .72rem; padding: 5px; border: 1px solid #cccccc;">DURAÇÃO</th>
+                    <th style="font-size: .72rem; padding: 5px; border: 1px solid #cccccc;">EXCLUSIVIDADE</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#scheduled}}
+                    <tr>
+                        <td style="padding: 5px; font-size: .72rem; font-weight: 400; border: 1px solid #cccccc;">{{fullname}}</td>
+                        <td style="padding: 5px; font-size: .72rem; font-weight: 400; border: 1px solid #cccccc;">{{data}}</td>
+                        <td style="padding: 5px; font-size: .72rem; font-weight: 400; border: 1px solid #cccccc;">{{username}}</td>
+                        <td style="padding: 5px; font-size: .72rem; font-weight: 400; border: 1px solid #cccccc;">{{nome}}</td>
+                        <td style="padding: 5px; font-size: .72rem; font-weight: 400; border: 1px solid #cccccc;">{{duration}}</td>
+                        <td style="padding: 5px; font-size: .72rem; font-weight: 400; border: 1px solid #cccccc;">{{exclusivity}}</td>
+                    </tr>
+                {{/scheduled}}
+            </tbody>
+        </table>
+    </div>
+</div>
